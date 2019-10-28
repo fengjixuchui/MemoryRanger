@@ -1,18 +1,23 @@
-## Updated MemoryRanger for Windows 1903 
-<img src="https://github.com/IgorKorkin/MemoryRanger/blob/master/blackhat2019_memoryranger_prevents_token_and_handle_hijacking.png" width="1000" />
+## Updated MemoryRanger: Hijacking Is Not An Option 
+Updated MemoryRanger prevents the following new attacks:
+* <b>Hijacking of NTFS structures</b> gains an unthorized access to files opened without shared access by patching Stream Control Block structures; 
+* <b>Handle Hijacking Attack</b> provides illegal access to exclusively open files via patching handle table entries;
+* <b>Token Hijacking Attack</b> is designed to elevate the process privileges without using token-swapping technique;
 
-* Handle Hijacking: illegal access to exclusive open files via patching handle table entries;
-* Token Hijacking: elevation of process privileges without using token-swapping technique;
-* Updated Memory Ranger can prevent Token Hijacking and Handle Hijacking attacks.
-* Four new demos are below.
+News:
+* Demos with Handle Hijacking and Token Hijacking as well as their prevention on newest <b>Windows 10 1903</b> are below.
+* Demos with Hijacking of NTFS structures will be soon. 
+* Updated MemoryRanger implements <b>special memory enclave to protect the sensitive kernel data</b>, e.g. Token Structures, from being tampered with all drivers, the scheme is below.
+
+<img src="https://github.com/IgorKorkin/MemoryRanger/blob/master/blackhat2019_memoryranger_prevents_token_and_handle_hijacking.png" width="1000" />
 
 Handle Hijacking Attack and its Preventing are here:
 
-[![Handle Hijacking Attack](https://img.youtube.com/vi/RPPjb_z9_Eg/mqdefault.jpg)](https://www.youtube.com/watch?v=RPPjb_z9_Eg&index=1&list=PL0Aerbf3kwUIzygUeuxiwReOD9IAc68dF) [![The Prevention of Handle Hijacking](https://img.youtube.com/vi/JtDffduwgHY/mqdefault.jpg)](https://www.youtube.com/watch?v=JtDffduwgHY&index=2&list=PL0Aerbf3kwUIzygUeuxiwReOD9IAc68dF)
+[![Handle Hijacking Attack](https://img.youtube.com/vi/lLIR5u8AzAY/mqdefault.jpg)](https://www.youtube.com/watch?v=lLIR5u8AzAY&index=1&list=PL0Aerbf3kwUKsNCeJ7wSG957BrIOweEz_) [![The Prevention of Handle Hijacking](https://img.youtube.com/vi/ZivkK9x-Hew/mqdefault.jpg)](https://www.youtube.com/watch?v=ZivkK9x-Hew&index=2&list=PL0Aerbf3kwUKsNCeJ7wSG957BrIOweEz_)
 
 Token Hijacking Attack and its Preventing are here:
 
-[![Handle Hijacking Attack](https://img.youtube.com/vi/fkKW4n2oaXQ/mqdefault.jpg)](https://www.youtube.com/watch?v=fkKW4n2oaXQg&index=3&list=PL0Aerbf3kwUIzygUeuxiwReOD9IAc68dF) [![The Prevention of Handle Hijacking](https://img.youtube.com/vi/xAAf-eefuB8/mqdefault.jpg)](https://www.youtube.com/watch?v=xAAf-eefuB8&index=4&list=PL0Aerbf3kwUIzygUeuxiwReOD9IAc68dF)
+[![Handle Hijacking Attack](https://img.youtube.com/vi/pnzvgGanbtw/mqdefault.jpg)](https://www.youtube.com/watch?v=pnzvgGanbtw&index=3&list=PL0Aerbf3kwUKsNCeJ7wSG957BrIOweEz_) [![The Prevention of Handle Hijacking](https://img.youtube.com/vi/mSh2R8WMYz8/mqdefault.jpg)](https://www.youtube.com/watch?v=mSh2R8WMYz8&index=4&list=PL0Aerbf3kwUKsNCeJ7wSG957BrIOweEz_)
 
 # MemoryRanger
 
